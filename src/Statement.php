@@ -4,15 +4,37 @@ namespace Dbfit;
 
 use \PDO;
 
+/**
+ * Statement
+ * 
+ * Responsible for statements on single PDO connection 
+ * 
+ * @since 0.1
+ * @author Abraao Levi <https://github.com/abraaolevi>
+ */
 class Statement
 {
+    /**
+     * Current query statement
+     * @var \PDOStatement 
+     */
     private $stmt;
     
+    /**
+     * Constructor class
+     * @param \PDOStatement $statemanet
+     */
     public function __construct(\PDOStatement $statemanet)
     {
         $this->stmt = $statemanet;
     }
     
+    /**
+     * 
+     * @param mixed $param
+     * @param mixed $value
+     * @param mixed $type
+     */
     public function bind($param, $value, $type = null)
     {
         if (is_null($type)) {
