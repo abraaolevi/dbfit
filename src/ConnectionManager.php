@@ -2,9 +2,21 @@
 
 namespace Dbfit;
 
+/**
+ * ConnectionManager
+ * 
+ * Responsible by manage PDO connections  
+ * 
+ * @since 0.1
+ * @author Abraao Levi <https://github.com/abraaolevi>
+ */
 class ConnectionManager
 {
 
+    /**
+     * Array of connections
+     * @var array 
+     */
     private $_config = [];
     
     /**
@@ -24,6 +36,11 @@ class ConnectionManager
         $this->_config[$key] = $config;
     }
 
+    /**
+     * Get PDO connection by configuration key/name
+     * @param string $key
+     * @return \PDO
+     */
     public static function get(string $key): \PDO
     {
         $options = [
@@ -39,7 +56,13 @@ class ConnectionManager
             );
     }
 
-    public static function parseDsn(array $config = [])
+    /**
+     * Get DNS string by configuration
+     * @param array $config
+     * @return string
+     * @throws \InvalidArgumentException
+     */
+    public static function parseDsn(array $config = []): string
     {
         if (empty($config)) {
             throw new \InvalidArgumentException("Config is empty. Can't parse DNS without config");
