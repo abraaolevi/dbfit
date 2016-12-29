@@ -1,7 +1,7 @@
 {
     "name": "dbfit/pdo",
     "description": "PDO database library any project php",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "type": "library",
     "keywords": ["pdo", "database"],
     "homepage": "https://github.com/abraaolevi/dbfit",
