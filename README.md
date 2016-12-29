@@ -1,7 +1,9 @@
 Dbfit
 =====
 
-Facilitating day-to-day SQL queries with PDO
+Facilitating day-to-day SQL queries with PDO.
+
+ATTENTION: it's a experimental version. Don't use it in production.
 
 ### USAGE 
 Simple queries:
