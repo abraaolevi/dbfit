@@ -1,6 +1,6 @@
 {
     "name": "dbfit/pdo",
-    "description": "PDO database library any project php",
+    "description": "PDO database library for any project php",
     "version": "1.0.0",
     "type": "library",
     "keywords": ["pdo", "database"],
@@ -17,10 +17,7 @@
         "issues": "https://github.com/abraaolevi/dbfit/issues",
         "docs": "https://github.com/abraaolevi/dbfit/blob/master/README.md"
     },
-    "require": {
-        "php": ">=7.0",
-        "ext-pdo": "*"
-    },
+    "require": {},
     "autoload": {
         "psr-4": {
             "Dbfit\\": "src/"
