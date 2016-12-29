@@ -1,0 +1,29 @@
+{
+    "name": "dbfit/pdo",
+    "description": "PDO database library any project php",
+    "version": "0.1.0",
+    "type": "library",
+    "keywords": ["pdo", "database"],
+    "homepage": "https://github.com/abraaolevi/dbfit",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abraão Levi",
+            "homepage": "https://github.com/abraaolevi",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/abraaolevi/dbfit/issues",
+        "docs": "https://github.com/abraaolevi/dbfit/blob/master/README.md"
+    },
+    "require": {
+        "php": ">=7.0",
+        "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dbfit\\": "src/"
+        }
+    }
+}

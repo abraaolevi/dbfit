@@ -7,7 +7,7 @@ namespace Dbfit;
  * 
  * Responsible by manage PDO connections  
  * 
- * @since 0.1
+ * @since 0.1.0
  * @author Abraao Levi <https://github.com/abraaolevi>
  */
 class ConnectionManager

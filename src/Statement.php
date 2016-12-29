@@ -9,7 +9,7 @@ use \PDO;
  * 
  * Responsible for statements on single PDO connection 
  * 
- * @since 0.1
+ * @since 0.1.0
  * @author Abraao Levi <https://github.com/abraaolevi>
  */
 class Statement

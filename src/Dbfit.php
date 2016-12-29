@@ -30,7 +30,7 @@ use Dbfit\ConnectionManager;
  * 
  * You can cancel a transaction using `$db->getConnection()->cancelTransaction();`
  * 
- * @since 0.1
+ * @since 0.1.0
  * @author Abraao Levi <https://github.com/abraaolevi>
  */
 class Dbfit
