@@ -5,6 +5,12 @@ Facilitating day-to-day SQL queries with PDO.
 
 ATTENTION: it's a experimental version. Don't use it in production.
 
+### INSTALLATION
+
+```
+composer require dbfit/pdo
+```
+
 ### USAGE 
 Simple queries:
 
