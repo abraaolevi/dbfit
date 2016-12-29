@@ -1,6 +1,6 @@
 {
     "name": "dbfit/pdo",
-    "description": "PDO database library any project php",
+    "description": "PDO database library for any project php",
     "version": "0.1.0",
     "type": "library",
     "keywords": ["pdo", "database"],
