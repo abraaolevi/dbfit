@@ -17,7 +17,10 @@
         "issues": "https://github.com/abraaolevi/dbfit/issues",
         "docs": "https://github.com/abraaolevi/dbfit/blob/master/README.md"
     },
-    "require": {},
+    "require": {
+        "php": ">=7.0",
+        "ext-pdo": "*"
+    },
     "autoload": {
         "psr-4": {
             "Dbfit\\": "src/"
