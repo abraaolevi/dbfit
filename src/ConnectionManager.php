@@ -2,6 +2,8 @@
 
 namespace Dbfit;
 
+use \PDO;
+
 /**
  * ConnectionManager
  * 
@@ -17,7 +19,7 @@ class ConnectionManager
      * Array of connections
      * @var array 
      */
-    private $_config = [];
+    protected static $_config = [];
     
     /**
      * Configure the Connection Manager
@@ -33,7 +35,7 @@ class ConnectionManager
             throw new \InvalidArgumentException("Config key is required");
         }
 
-        $this->_config[$key] = $config;
+        self::$_config[$key] = $config;
     }
 
     /**
@@ -48,10 +50,10 @@ class ConnectionManager
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
         ];
         
-        return new \PDO(
-                self::parseDsn($this->_config[$key]), 
-                $this->_config['user'], 
-                $this->_config['password'], 
+        return new PDO(
+                self::parseDsn(self::$_config[$key]), 
+                self::$_config['user'], 
+                self::$_config['password'], 
                 $options
             );
     }
