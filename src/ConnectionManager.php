@@ -52,8 +52,8 @@ class ConnectionManager
         
         return new PDO(
                 self::parseDsn(self::$_config[$key]), 
-                self::$_config['user'], 
-                self::$_config['password'], 
+                self::$_config[$key]['user'], 
+                self::$_config[$key]['password'], 
                 $options
             );
     }
