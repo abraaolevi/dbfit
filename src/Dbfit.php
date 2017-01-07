@@ -95,7 +95,7 @@ class Dbfit
      */
     public function query(string $sql, array $params = [], bool $rawResponse = true): array
     {
-        $this->stmt = $this->conn->prepareQuery($sql);
+        $this->prepareQuery($sql);
 
         foreach ($params as $key => $value) {
             $this->stmt->bind($key, $value);
@@ -113,6 +113,11 @@ class Dbfit
             "result" => $this->stmt->resultset(),
             "count" => $this->stmt->rowCount()
         ];
+    }
+    
+    public function prepareQuery(string $sql)
+    {
+        $this->stmt = $this->conn->prepareQuery($sql);
     }
     
     /**

@@ -31,10 +31,12 @@ $dbfit->getConnection()->endTransaction();
 You can cancel a transaction using `$dbfit->getConnection()->cancelTransaction();`
 
 ### Changelog
+* v1.0.3
+  - Adding flexybility with `prepareQuery` method
 * v1.0.2
-  - Some bugfixes at ConnectionManager 
+  - Some bugfixes at `ConnectionManager`
 * v1.0.1
-  - Fixing composer.json
+  - Fixing `composer.json`
 * v1.0.0
   - Initial version
 
